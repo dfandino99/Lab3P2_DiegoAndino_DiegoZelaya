@@ -1,21 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Laboratorio de la semana 3 de Programacion 2
+
 package lab3p2_diegoandino_diegozelaya;
 
-/**
- *
- * @author diegoandino
- */
+import java.util.*;
+
 public class Lab3P2_DiegoAndino_DiegoZelaya {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
