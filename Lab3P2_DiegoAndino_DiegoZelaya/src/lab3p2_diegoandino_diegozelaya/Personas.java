@@ -10,7 +10,8 @@ public class Personas {
     private ArrayList<String> contraseña=new ArrayList();
     private ArrayList<String> correo=new ArrayList();
     private ArrayList<String> nombre=new ArrayList();
-    private ArrayList<String> roles=new ArrayList();
+    private ArrayList<Clientes> clientes=new ArrayList();
+    private ArrayList<Empleados> empleados=new ArrayList();
 
     public Personas() {
     }
@@ -55,17 +56,24 @@ public class Personas {
         this.nombre = nombre;
     }
 
-    public ArrayList<String> getRoles() {
-        return roles;
+    public ArrayList<Clientes> getClientes() {
+        return clientes;
     }
 
-    public void setRoles(ArrayList<String> roles) {
-        this.roles = roles;
+    public void setClientes(ArrayList<Clientes> clientes) {
+        this.clientes = clientes;
+    }
+
+    public ArrayList<Empleados> getEmpleados() {
+        return empleados;
+    }
+
+    public void setEmpleados(ArrayList<Empleados> empleados) {
+        this.empleados = empleados;
     }
 
     @Override
     public String toString() {
-        return "Personas{" + "id=" + id + ", username=" + username + ", contrase\u00f1a=" + contraseña + ", correo=" + correo + ", nombre=" + nombre + ", roles=" + roles + '}';
+        return "Personas{" + "id=" + id + ", username=" + username + ", contrase\u00f1a=" + contraseña + ", correo=" + correo + ", nombre=" + nombre + ", clientes=" + clientes + ", empleados=" + empleados + '}';
     }
-    
 }
