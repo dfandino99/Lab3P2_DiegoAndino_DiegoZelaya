@@ -6,24 +6,81 @@ import java.util.*;
 
 public class Lab3P2_DiegoAndino_DiegoZelaya {
 
+    static Scanner leer = new Scanner(System.in);
+    static Random ran = new Random();
+    
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        int opcion=0;
-        System.out.print("1. Log  \n2. Personas \n3. Productos \n4. Salir \nIngrese la opcion: ");
-        opcion=scanner.nextInt();
-        switch (opcion){
-            case 2: Personas p=new Personas();
-                System.out.print("1. Agregar \n2.Modificar \n3. Eliminar \nIngrese la opcion: ");
-                opcion=scanner.nextInt();
+        String admin = "SUDO";
+        String contra = "clau123";
+        ArrayList personas = new ArrayList();
+        ArrayList productos;
+        ArrayList <String> ID = new ArrayList(); 
+        ArrayList <String> username = new ArrayList();
+        
+        char resp = 's';
+        
+            while (resp == 's') {
                 
-            switch (opcion){
+                System.out.print("\n\n**********MENU**********\n"
+                        + "1). Log in\n"
+                        + "2). Sign in\n"
+                        + "3). Salir\n"
+                        + "Ingresar: ");
+                int opc = leer.nextInt();
+                
+                    switch (opc) {
+                        
+                        case 1: {
+                            
+                        break; }
+                        
+                        case 2: {
+                            System.out.print("Ingrese su nombre completo: ");
+                            String nombre = leer.nextLine();
+                            System.out.print("Ingrese su contrasena: ");
+                            String contrasena = leer.next();
+                            System.out.print("Ingrese su correo: ");
+                            String correo = leer.next();
+                            System.out.print("Ingrese cuanto dinero tiene: ");
+                            double dinero = leer.nextDouble();
+                            String id = "";
+                            boolean b = false;
+                                while (b == false) {
+                                    int f = 100+ran.nextInt(10000);
+                                    id+=f;
+                                        if (ID.contains(id)) {
+                                            b = false;
+                                        } else {
+                                            b = true;
+                                        }
+                                }
+                                ID.add(id);
+                                String user = nombre.substring(0, 5);
+                                boolean x = false;
+                                    while (x == false) {
+                                        int n = 30+ran.nextInt(400);
+                                        user+=n;
+                                            if (username.contains(user)) {
+                                               x = false; 
+                                            } else {
+                                                x = true;
+                                            }
+                                    }
+                                    username.add(user);
+                                    personas.add(new Clientes(dinero, id,user, contrasena, correo, nombre));  
+                        break; }
+                        
+                        case 3: {
+                            resp = 'n'; 
+                            System.out.print("\nTenga un buen dia\n"); 
+                            break;
+                        }
+                        
+                    }
                 
             }
-            
-            break;
-            
-        }
+        
 
     }
     
