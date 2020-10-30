@@ -2,70 +2,67 @@
 
 package lab3p2_diegoandino_diegozelaya;
 
-import java.util.ArrayList;
-
 public class Personas {
-    private ArrayList<String> id=new ArrayList();
-    private ArrayList<String> username=new ArrayList();
-    private ArrayList<String> contraseña=new ArrayList();
-    private ArrayList<String> correo=new ArrayList();
-    private ArrayList<String> nombre=new ArrayList();
-    private ArrayList<String> roles=new ArrayList();
+    private String id;
+    private String username;
+    private String contraseña;
+    private String correo;
+    private String nombre;
 
     public Personas() {
     }
 
-    public ArrayList<String> getId() {
-        return id;
-    }
-
-    public void setId(ArrayList<String> id) {
+    public Personas(String id, String username, String contraseña, String correo, String nombre) {
         this.id = id;
-    }
-
-    public ArrayList<String> getUsername() {
-        return username;
-    }
-
-    public void setUsername(ArrayList<String> username) {
         this.username = username;
-    }
-
-    public ArrayList<String> getContraseña() {
-        return contraseña;
-    }
-
-    public void setContraseña(ArrayList<String> contraseña) {
         this.contraseña = contraseña;
-    }
-
-    public ArrayList<String> getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(ArrayList<String> correo) {
         this.correo = correo;
-    }
-
-    public ArrayList<String> getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(ArrayList<String> nombre) {
         this.nombre = nombre;
     }
 
-    public ArrayList<String> getRoles() {
-        return roles;
+    public String getId() {
+        return id;
     }
 
-    public void setRoles(ArrayList<String> roles) {
-        this.roles = roles;
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     @Override
     public String toString() {
-        return "Personas{" + "id=" + id + ", username=" + username + ", contrase\u00f1a=" + contraseña + ", correo=" + correo + ", nombre=" + nombre + ", roles=" + roles + '}';
+        return "Personas{" + "id=" + id + ", username=" + username + ", contrase\u00f1a=" + contraseña + ", correo=" + correo + ", nombre=" + nombre + '}';
     }
-    
+
 }

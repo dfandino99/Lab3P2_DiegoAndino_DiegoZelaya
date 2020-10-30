@@ -11,7 +11,10 @@ public class Quiosco extends Tiendas {
         super();
     }
 
-    
+    public Quiosco(String quisco, ArrayList<Ropa> ropa, ArrayList<Juguetes> juguetes, String nombre, ArrayList<Empleados> empleado, ArrayList<Productos> productos, Empleados gerente) {
+        super(ropa, juguetes, nombre, empleado, productos, gerente);
+        this.quisco = quisco;
+    }
     
     //Accesores y mutadores
 
