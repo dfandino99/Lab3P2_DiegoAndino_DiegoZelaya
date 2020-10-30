@@ -14,9 +14,11 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
         String admin = "SUDO";
         String contra = "clau123";
         ArrayList personas = new ArrayList();
-        ArrayList productos;
+        ArrayList productos = new ArrayList();
         ArrayList <String> ID = new ArrayList(); 
         ArrayList <String> username = new ArrayList();
+        String usuario = "";
+        String contras = "";
         
         char resp = 's';
         
@@ -32,6 +34,29 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                     switch (opc) {
                         
                         case 1: {
+                            System.out.print("\nIngrese el usuario: ");
+                            String x = leer.next();
+                            if (x.equals(admin)) {
+                                System.out.print("\nHola SUDO, tu contrasena es: "+contra);
+                            }
+                            System.out.print("\nIngrese la contrasena: ");
+                            String c = leer.next();
+                            String xd = "";
+                                if (x.equals(usuario) && c.equals(contras)) {
+                                    xd = x;
+                                } else if (x.equals(admin) && c.equals(contra)) {
+                                    xd = "SUDO";
+                                }
+                                
+                                if (xd.equals(x)) {
+                                    if (productos.size() >= 1) {
+                                        
+                                    } else {
+                                        System.out.print("\nNo hay productos registrados\n");
+                                    }
+                                } else if (xd.equals("SUDO")) {
+                                    
+                                }
                             
                         break; }
                         
@@ -68,7 +93,10 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                                             }
                                     }
                                     username.add(user);
-                                    personas.add(new Clientes(dinero, id,user, contrasena, correo, nombre));  
+                                    personas.add(new Clientes(dinero, id,user, contrasena, correo, nombre));
+                                    usuario = user;
+                                    contras = contrasena;
+                                    System.out.print("\nTu usuario es: "+user);
                         break; }
                         
                         case 3: {
