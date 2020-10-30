@@ -5,7 +5,7 @@ package lab3p2_diegoandino_diegozelaya;
 import java.util.ArrayList;
 
 public class Clientes extends Personas {
-    private int dinero;
+    private double dinero;
     private ArrayList carrito=new ArrayList();
 
     public Clientes() {
@@ -17,11 +17,18 @@ public class Clientes extends Personas {
         this.dinero = dinero;
     }
 
-    public int getDinero() {
+    public Clientes(double dinero, String id, String username, String contraseña, String correo, String nombre) {
+        super(id, username, contraseña, correo, nombre);
+        this.dinero = dinero;
+    }
+    
+    
+
+    public double getDinero() {
         return dinero;
     }
 
-    public void setDinero(int dinero) {
+    public void setDinero(double dinero) {
         this.dinero = dinero;
     }
 

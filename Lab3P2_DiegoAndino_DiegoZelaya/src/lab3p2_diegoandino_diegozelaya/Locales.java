@@ -23,7 +23,8 @@ public class Locales {
         this.productos = productos;
         this.gerente = gerente;
     }
-    
+
+   
     //Accesores y mutadores
 
     public String getNombre() {
