@@ -13,6 +13,7 @@ public class Clientes extends Personas {
     }
 
     public Clientes(int dinero) {
+        super();
         this.dinero = dinero;
     }
 
