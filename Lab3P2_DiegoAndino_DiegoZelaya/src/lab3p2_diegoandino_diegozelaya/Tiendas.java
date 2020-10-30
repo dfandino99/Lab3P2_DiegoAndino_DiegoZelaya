@@ -20,6 +20,13 @@ public class Tiendas extends Locales {
         this.ropa = ropa;
         this.juguetes = juguetes;
     }
+
+    public Tiendas(ArrayList<Ropa> ropa, ArrayList<Juguetes> juguetes) {
+        this.ropa = ropa;
+        this.juguetes = juguetes;
+    }
+    
+    
     
     //Accesores y mutadores
 
