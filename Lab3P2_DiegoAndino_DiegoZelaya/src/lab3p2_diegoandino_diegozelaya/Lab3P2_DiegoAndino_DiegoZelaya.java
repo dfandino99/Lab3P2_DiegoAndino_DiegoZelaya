@@ -79,7 +79,7 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                                                 System.out.print("3. Comida");
                                                 System.out.print("Que productos desea comprar: ");
                                                 int quiosco=leer.nextInt();
-                                                switch (tienda){
+                                                switch (quiosco){
                                                     case 1:
                                                     break;
                                                     
@@ -94,7 +94,6 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                                             
                                             case 3: System.out.print("\n*****Restaurante*****\n");
                                                 System.out.print("");
-                                                String restaurante=
                                             break;
                                             
                                         }
