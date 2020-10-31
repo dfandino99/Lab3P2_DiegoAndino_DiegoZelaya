@@ -13,6 +13,7 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
 
         String admin = "SUDO";
         String contra = "clau123";
+        double dinero=0;
         ArrayList personas = new ArrayList();
         ArrayList productos = new ArrayList();
         ArrayList <String> ID = new ArrayList(); 
@@ -44,6 +45,59 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                             String xd = "";
                                 if (x.equals(usuario) && c.equals(contras)) {
                                     xd = x;
+                                    while (dinero!=0){
+                                        System.out.print("\n******Bienvenido******\n");
+                                        System.out.print("1. Tienda \n");
+                                        System.out.print("2. Quiosco \n");
+                                        System.out.print("3. Restaurantes");
+                                        System.out.print("Ingrese la opcion: ");
+                                        int local=leer.nextInt();
+                                        switch (local){
+                                            case 1: System.out.print("\n*****Tienda*****\n");
+                                                System.out.print("1. Ropa");
+                                                System.out.print("2. Juguetes");
+                                                System.out.print("3. Comida");
+                                                System.out.print("Que productos desea comprar: ");
+                                                int tienda=leer.nextInt();
+                                                switch (tienda){
+                                                    case 1:
+                                                    break;
+                                                    
+                                                    case 2:
+                                                    break;
+                                                    
+                                                    case 3:
+                                                    break;
+                                                    
+                                                }
+                                            break;
+                                            
+                                            case 2: System.out.print("\n*****Quiosco-50%*****\n");
+                                                System.out.print("1. Ropa");
+                                                System.out.print("2. Juguetes");
+                                                System.out.print("3. Comida");
+                                                System.out.print("Que productos desea comprar: ");
+                                                int quiosco=leer.nextInt();
+                                                switch (tienda){
+                                                    case 1:
+                                                    break;
+                                                    
+                                                    case 2:
+                                                    break;
+                                                    
+                                                    case 3:
+                                                    break;
+                                                    
+                                                }
+                                            break;
+                                            
+                                            case 3: System.out.print("\n*****Restaurante*****\n");
+                                                System.out.print("");
+                                                String restaurante=
+                                            break;
+                                            
+                                        }
+                                    }
                                 } else if (x.equals(admin) && c.equals(contra)) {
                                     xd = "SUDO";
                                 }
@@ -68,7 +122,7 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                             System.out.print("Ingrese su correo: ");
                             String correo = leer.next();
                             System.out.print("Ingrese cuanto dinero tiene: ");
-                            double dinero = leer.nextDouble();
+                            dinero = leer.nextDouble();
                             String id = "";
                             boolean b = false;
                                 while (b == false) {
