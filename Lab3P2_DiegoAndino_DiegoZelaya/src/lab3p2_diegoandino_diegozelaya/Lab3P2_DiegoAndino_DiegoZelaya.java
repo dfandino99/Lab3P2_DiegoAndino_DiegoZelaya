@@ -15,6 +15,7 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
         String contra = "clau123";
         ArrayList personas = new ArrayList();
         ArrayList productos = new ArrayList();
+        ArrayList tiendas = new ArrayList();
         ArrayList <String> ID = new ArrayList(); 
         ArrayList <String> username = new ArrayList();
         String usuario = "";
@@ -55,7 +56,78 @@ public class Lab3P2_DiegoAndino_DiegoZelaya {
                                         System.out.print("\nNo hay productos registrados\n");
                                     }
                                 } else if (xd.equals("SUDO")) {
-                                    
+                                    System.out.print("\n\n******MENU DEL SUDO******\n"
+                                            + "1). Anadir\n"
+                                            + "2). Modificar\n"
+                                            + "3). ELimina\nr"
+                                            + "Escoja la opcion: ");
+                                    int op = leer.nextInt();
+                                        
+                                    switch (op) {
+                                        
+                                        case 1: {
+                                            System.out.print("\n\n******Opciones que puedes anadir******\n"
+                                                + "1). Anadir locales\n"
+                                                + "2). Anadir personas\n"
+                                                + "3). Anadir productos\n"
+                                                + "Escoja la opcion: ");
+                                            int opci = leer.nextInt();
+                                            
+                                                switch (opci) {
+                                                    
+                                                    case 1: {
+                                                        System.out.print("\n****Locales que puedes anadir****"
+                                                                + "1). Tiendas\n"
+                                                                + "2). Quioscos\n"
+                                                                + "3). Reataurantes\n"
+                                                                + "Opcion: ");
+                                                        int num = leer.nextInt();
+                                                        
+                                                            switch (num) {
+                                                                
+                                                                case 1: {
+                                                                    System.out.print("\nIngrese el nombre: ");
+                                                                    String n = leer.next();
+                                                                    
+                                                                    
+                                                                break; }
+                                                                
+                                                                case 2: {
+                                                                    
+                                                                break; }
+                                                                
+                                                                case 3: {
+                                                                    
+                                                                break; }
+                                                                
+                                                            }
+                                                        
+                                                    break; }
+                                                    
+                                                    case 2: {
+                                                        
+                                                    break; }
+                                                    
+                                                    case 3: {
+                                                        
+                                                    break; }
+                                                    
+                                                    default: {
+                                                        System.out.print("Opcion no valida");
+                                                    }
+                                                }
+                                            
+                                        break; }
+                                        
+                                        case 2: {
+                                            
+                                        break;}
+                                        
+                                        case 3 : {
+                                            
+                                        break; }
+                                        
+                                    }
                                 }
                             
                         break; }

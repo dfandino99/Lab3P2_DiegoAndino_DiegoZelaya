@@ -25,7 +25,5 @@ public class Quiosco extends Tiendas {
     public void setQuisco(String quisco) {
         this.quisco = quisco;
     }
-    
-    
-    
+
 }

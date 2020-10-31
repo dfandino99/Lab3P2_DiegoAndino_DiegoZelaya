@@ -26,8 +26,6 @@ public class Tiendas extends Locales {
         this.juguetes = juguetes;
     }
     
-    
-    
     //Accesores y mutadores
 
     public ArrayList<Ropa> getRopa() {
@@ -48,6 +46,10 @@ public class Tiendas extends Locales {
     
     //Metodos administrativos
 
+    public void anadirRopa (Ropa e) {
+        ropa.add(e);
+    }
+    
     @Override
     public String toString() {
         return "Tiendas{" + "ropa=" + ropa + ", juguetes=" + juguetes + '}';
